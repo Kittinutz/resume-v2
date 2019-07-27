@@ -4,19 +4,20 @@ module.exports = {
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
+  pathPrefix: '/resume',
   plugins: [
     {
       resolve: `gatsby-source-mongodb`,
-      options: { 
+      options: {
         dbName: `profile`,
-        collection: `bio` , 
-        server:{
-          address:'localhost',
-          port:'27017'
+        collection: `bio`,
+        server: {
+          address: 'localhost',
+          port: '27017'
         },
-        auth:{
-          user:'kittinut',
-          password:'isylzjkoot',
+        auth: {
+          user: 'kittinut',
+          password: 'isylzjkoot',
         }
       },
     },
