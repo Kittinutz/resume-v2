@@ -279,6 +279,7 @@ const Header = () => {
               </div>
             </ContainerProfile>
           </div>
+          <script src="https://kit.fontawesome.com/aa135d3ed9.js"></script>
         </ContainerBio>
       </div>
     </Wrapper>
