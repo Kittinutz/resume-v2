@@ -5,6 +5,21 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-mongodb`,
+      options: { 
+        dbName: `profile`,
+        collection: `bio` , 
+        server:{
+          address:'localhost',
+          port:'27017'
+        },
+        auth:{
+          user:'kittinut',
+          password:'isylzjkoot',
+        }
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
