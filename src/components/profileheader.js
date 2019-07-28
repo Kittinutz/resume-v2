@@ -50,7 +50,7 @@ const ContainerPicture = styled.div`
         height:200px;
         margin: 0 auto;
         margin-bottom: 0;
-        background-color: #ffffff;
+        background-color: #fff;
         border-radius: 50%;
         border: 3px solid #fff;
         box-shadow:0px 0px 15px 3px rgba(0,0,0,0.9);
