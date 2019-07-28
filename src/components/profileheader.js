@@ -17,6 +17,7 @@ const WrapperBackgroundPresent = styled.div`
   background-position: center;
   background-attachment: fixed;
   background-clip: content-box;
+  background-color:#007AC2;
   display: flex;
   div {
     &.wrapper-bg {
