@@ -14,8 +14,8 @@ const WrapperBackgroundPresent = styled.div`
   background-image: url(${headerCover});
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
+  background-attachment: fixed;
   background-clip: content-box;
   display: flex;
   div {
@@ -128,11 +128,10 @@ const TypeComponent = styled(Typed)`
       padding: 0 50px;
     }
     @media screen and (min-width:400px){
-      padding: 0 75px;
+      text-align: center;
+      padding:0;
     }
-    @media screen and (min-width:700px){
-      padding: 0 30%;
-    }
+  
     &:focus{
       cursor:none;
       outline:none;
@@ -212,7 +211,6 @@ const Header = () => {
               'I am Developer',
             ]}
             typeSpeed={40}
-            backSpeed={50}
             attr="placeholder"
             loop={false} >
             <input type="text" disabled />
