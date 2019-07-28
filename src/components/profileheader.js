@@ -15,7 +15,6 @@ const WrapperBackgroundPresent = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-clip: content-box;
   background-color:#007AC2;
   display: flex;
@@ -38,7 +37,7 @@ const ContainerPicture = styled.div`
   margin: 0 auto;
   margin: 0px auto;
   z-index: 1;
-  bottom: -96px;
+  top: 85vh;
   width: 100%;
   div {
     width:100%;
@@ -123,6 +122,7 @@ const TypeComponent = styled(Typed)`
     background-color: transparent;
     border: 0;
     color:#ffffff;
+    line-height:13;
     /* text-align: center; */
     padding: 0 30px;
     @media screen and (min-width:360px){
@@ -150,6 +150,7 @@ const ContainerProfile = styled.div`
   justify-content: space-evenly;
   flex-wrap: wrap;
   &.contect {
+    height:100%;
     i{
       font-size: 45px;
     }
