@@ -76,6 +76,9 @@ const ContainerBio = styled.div`
       align-content: flex-start;
       h1 {
         &.title {
+          &.contect{
+            margin:0;
+          }
           &.skill{
             margin: 20px 0;
           }
@@ -118,7 +121,20 @@ const TypeComponent = styled(Typed)`
     background-color: transparent;
     border: 0;
     color:#ffffff;
-    text-align: center;
+    /* text-align: center; */
+    padding: 0 30px;
+    @media screen and (min-width:360px){
+      padding: 0 50px;
+    }
+    @media screen and (min-width:400px){
+      padding: 0 75px;
+    }
+    @media screen and (min-width:700px){
+      padding: 0 30%;
+    }
+    @media screen and (min-width:1000px){
+      padding: 0 35%;
+    }
     &:focus{
       cursor:none;
       outline:none;
@@ -136,7 +152,6 @@ const ContainerProfile = styled.div`
   justify-content: space-evenly;
   flex-wrap: wrap;
   &.contect {
-    margin: 20px 0;
     i{
       font-size: 45px;
     }
@@ -231,7 +246,7 @@ const Header = () => {
               <p className="center">Software Engineering - Font-end developer At AppMan Co.,Ltd 2018 - 2019 (1 year)</p>
               <div className="bio-header">
                 <div className="line"></div>
-                <h1 className="title">Contect</h1>
+                <h1 className="title contect">Contect</h1>
                 <div className="line"></div>
               </div>
               <ContainerProfile className="skill contect">
@@ -279,7 +294,6 @@ const Header = () => {
               </div>
             </ContainerProfile>
           </div>
-          <script src="https://kit.fontawesome.com/aa135d3ed9.js"></script>
         </ContainerBio>
       </div>
     </Wrapper>
