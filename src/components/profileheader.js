@@ -14,6 +14,7 @@ const WrapperBackgroundPresent = styled.div`
   background-image: url(${headerCover});
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   background-clip: content-box;
   display: flex;
@@ -131,9 +132,6 @@ const TypeComponent = styled(Typed)`
     }
     @media screen and (min-width:700px){
       padding: 0 30%;
-    }
-    @media screen and (min-width:1000px){
-      padding: 0 35%;
     }
     &:focus{
       cursor:none;
