@@ -26,6 +26,12 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
+      - run:
+          name: Install dependencie
+          command: |
+            sudo apt-get update
+            sudo apt-get install libxtst6 libgconf-2-4 libnss3 libasound2
+
       - run: yarn install
       - run: yarn cypress install
      
