@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  web:
+    # Uncomment this and comment out `build`
+    # if you don't want to rebuild image on your local
+    # CircleCI doesn't support volumes that's the reason
+    # we need to add `build` here.
+    # image: nginx:stable-alpine
+    # volumes:
+    #   - "./dist:/usr/share/nginx/html"
+    container_name: web
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+
+    ports:
+      - "80:80"
+
+  cypress:
+    build:
+      context: .
+      dockerfile: Dockerfile.cypress
+    # volumes:
+    #   - './video:/usr/src/app/cypress/videos'
+    depends_on:
+      - web
+    environment:
+      - CYPRESS_HOST=http://web
