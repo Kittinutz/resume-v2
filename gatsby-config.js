@@ -1,11 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `KITTINUT PRAMHAN`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
   pathPrefix: '/resume-v2',
   plugins: [
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+      },
+    },
     {
       resolve: `gatsby-source-mongodb`,
       options: {
