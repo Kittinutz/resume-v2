@@ -76,8 +76,8 @@ workflows:
     version: 2
     e2e:
         jobs:
-        - test
+        - build
         - e2e-test:
             requires:
-              - test
+              - build
     
