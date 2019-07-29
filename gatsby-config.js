@@ -11,21 +11,21 @@ module.exports = {
       options: {
       },
     },
-    {
-      resolve: `gatsby-source-mongodb`,
-      options: {
-        dbName: `profile`,
-        collection: `bio`,
-        server: {
-          address: 'localhost',
-          port: '27017'
-        },
-        auth: {
-          user: 'kittinut',
-          password: 'isylzjkoot',
-        }
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-mongodb`,
+    //   options: {
+    //     dbName: `profile`,
+    //     collection: `bio`,
+    //     server: {
+    //       address: 'localhost',
+    //       port: '27017'
+    //     },
+    //     auth: {
+    //       user: 'kittinut',
+    //       password: 'isylzjkoot',
+    //     }
+    //   },
+    // },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
