@@ -72,41 +72,41 @@ jobs:
           command: |
             docker-compose -f docker-compose.e2e.yml run --rm cypress ./node_modules/.bin/cypress run -s  cypress/integration/actions.spec.js --config video=false
 
-  e2e-test-aliasing:
-    working_directory: ~/repo
-    docker:
-      - image: circleci/node:8.12
+  # e2e-test-aliasing:
+  #   working_directory: ~/repo
+  #   docker:
+  #     - image: circleci/node:8.12
 
-    steps:
-      - checkout
+  #   steps:
+  #     - checkout
 
-      - run:
-          name: Install Docker Compose
-          command: |
-            curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` > ~/docker-compose
-            chmod +x ~/docker-compose
-            sudo mv ~/docker-compose /usr/local/bin/docker-compose
-            # echo $ENV_DEV | base64 --decode > ./config/dev.js
-      - setup_remote_docker
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+  #     - run:
+  #         name: Install Docker Compose
+  #         command: |
+  #           curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` > ~/docker-compose
+  #           chmod +x ~/docker-compose
+  #           sudo mv ~/docker-compose /usr/local/bin/docker-compose
+  #           # echo $ENV_DEV | base64 --decode > ./config/dev.js
+  #     - setup_remote_docker
+  #     - restore_cache:
+  #         keys:
+  #         - v1-dependencies-{{ checksum "package.json" }}
+  #         # fallback to using the latest cache if no exact match is found
+  #         - v1-dependencies-
 
-      - run: yarn install
+  #     - run: yarn install
 
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+  #     - save_cache:
+  #         paths:
+  #           - node_modules
+  #         key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: yarn build
+  #     - run: yarn build
 
-      - run:
-          name: Run e2e
-          command: |
-            docker-compose -f docker-compose.e2e.yml run --rm cypress ./node_modules/.bin/cypress run -s  cypress/integration/aliasing.spec.js --config video=false
+  #     - run:
+  #         name: Run e2e
+  #         command: |
+  #           docker-compose -f docker-compose.e2e.yml run --rm cypress ./node_modules/.bin/cypress run -s  cypress/integration/aliasing.spec.js --config video=false
   
 workflows:
     version: 2
@@ -116,7 +116,7 @@ workflows:
         - e2e-test-action:
             requires:
               - build
-        - e2e-test-aliasing:
-            requires:
-              - build
+        # - e2e-test-aliasing:
+        #     requires:
+        #       - build
     
