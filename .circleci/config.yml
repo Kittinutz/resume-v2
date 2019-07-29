@@ -30,8 +30,8 @@ jobs:
       - run: 
           name: install dependencies
           command: |
-              apt-get update
-              apt-get install libxtst6 libgconf-2-4 libnss3 libasound2
+              sudo apt-get update
+              sudo apt-get install libxtst6 libgconf-2-4 libnss3 libasound2
       - save_cache:
           paths:
             - node_modules
