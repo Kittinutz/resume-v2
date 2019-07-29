@@ -70,7 +70,7 @@ jobs:
       - run:
           name: Run e2e
           command: |
-            docker-compose -f docker-compose.e2e.yml run 
+            docker-compose -f docker-compose.e2e.yml run --rm cypress ./node_modules/.bin/cypress run
   
 workflows:
     version: 2
