@@ -248,11 +248,11 @@ const Header = () => {
                 <div className="line"></div>
               </div>
               <ContainerProfile className="skill contect">
-                <a href="https://www.facebook.com/Prostars37?ref=bookmarks" target="blank"><i class="fab fa-facebook"></i></a>
-                <a href="tel:+66994605162" target="blank"><i class="fas fa-mobile"></i></a>
-                <a href="mailto:knightza94@gmail.com" target="blank"><i class="fas fa-inbox"></i></a>
-                <a href="https://www.instagram.com/kittinut.t/?hl=en" target="blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://medium.com/@kittinutpramhan" target="blank"><i class="fab fa-medium"></i></a>
+                <a href="https://www.facebook.com/Prostars37?ref=bookmarks" target="blank"><i className="fab fa-facebook"></i></a>
+                <a href="tel:+66994605162" target="blank"><i className="fas fa-mobile"></i></a>
+                <a href="mailto:knightza94@gmail.com" target="blank"><i className="fas fa-inbox"></i></a>
+                <a href="https://www.instagram.com/kittinut.t/?hl=en" target="blank"><i className="fab fa-instagram"></i></a>
+                <a href="https://medium.com/@kittinutpramhan" target="blank"><i className="fab fa-medium"></i></a>
               </ContainerProfile>
             </ContainerProfile>
           </div>
@@ -265,14 +265,14 @@ const Header = () => {
               <h1 className="title skill">Expert</h1>
             </div>
             <ContainerProfile className="skill">
-              <i class="fab fa-react"></i>
-              <i class="fab fa-node-js"></i>
-              <i class="fab fa-docker"></i>
-              <i class="fab fa-css3-alt"></i>
-              <i class="fab fa-html5"></i>
-              <i class="fab fa-java"></i>
-              <i class="fab fa-git-alt"></i>
-              <i class="fab fa-laravel"></i>
+              <i className="fab fa-react"></i>
+              <i className="fab fa-node-js"></i>
+              <i className="fab fa-docker"></i>
+              <i className="fab fa-css3-alt"></i>
+              <i className="fab fa-html5"></i>
+              <i className="fab fa-java"></i>
+              <i className="fab fa-git-alt"></i>
+              <i className="fab fa-laravel"></i>
               <img className="icon-img" src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/217/thumb/cypress.png" alt="cypress" />
             </ContainerProfile>
             <div className="bio-header">
