@@ -75,6 +75,9 @@ const ContainerBio = styled.div`
       flex-wrap:wrap;
       justify-content: center;
       align-content: flex-start;
+      ul{
+        padding: 0 20px;
+      }
       h1 {
         &.title {
           &.contect{
@@ -241,7 +244,24 @@ const Header = () => {
                 <h1 className="title">Work</h1>
                 <div className="line"></div>
               </div>
-              <p className="center">Software Engineering - Font-end developer At AppMan Co.,Ltd 2018 - 2019 (1 year)</p>
+              <p className="center">Software Engineering - Front-end developer At AppMan Co.,Ltd 2018 - present</p>
+              <div className="bio-header">
+                <h1 className="title">Experice</h1>
+                <ul>
+                  <li>Developed hybrid applications with React and Cordova for top insurance companies in Thailand.</li>
+                  <li>Created highly customization and reusable React components.</li>
+                  <li>Created highly customization and reusable React components.</li>
+                  <li>Translated design to code in React.</li>
+                  <li>Participated in projects in all stages of the product life cycle .</li>
+                  <li>Mentored internship students.</li>
+                  <li>Write Testable code.</li>
+                  <li>Translated test case from QA team to code for automation test.</li>
+                  <li>Write script for automation for Circle Ci.</li>
+                  <li>Using Docker to serve web application and run automation test.</li>
+                  <li>Create reusable function for automation test.</li>
+                </ul>
+
+              </div>
               <div className="bio-header">
                 <div className="line"></div>
                 <h1 className="title contect">Contect</h1>
