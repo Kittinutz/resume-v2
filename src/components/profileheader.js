@@ -76,7 +76,7 @@ const ContainerBio = styled.div`
       justify-content: center;
       align-content: flex-start;
       ul{
-        padding: 0 20px;
+        padding: 0 50px;
       }
       h1 {
         &.title {
